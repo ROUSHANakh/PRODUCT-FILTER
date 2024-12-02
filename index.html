@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Filter And Search</title>
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="search-container">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search product name here.."
+        />
+        <button id="search">Search</button>
+      </div>
+      <button class="sidebar-toggle"><i class="fas fa-bars"></i></button>
+
+      <div id="buttons">
+        <button class="button-value" onclick="filterProduct('all')">All</button>
+        <button class="button-value" onclick="filterProduct('Topwear')">
+          Topwear
+        </button>
+        <button class="button-value" onclick="filterProduct('Bottomwear')">
+          Bottomwear
+        </button>
+        <button class="button-value" onclick="filterProduct('jacket')">
+          Jacket
+        </button>
+        <button class="button-value" onclick="filterProduct('Watch')">
+          Watch
+        </button>
+      </div>
+      <div id="products"></div>
+      <!--slide bar-->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+          <img src="logo.svg", class="logo" alt=""/>
+          <button class="close-btn">
+           <i class="fas fa-times"></i>
+          </button>
+        </div>
+    <!--links-->
+        <ul class="links">
+          <Li>
+            <a href="index.html">home</a>
+          </Li>       
+          <li>
+            <a href="about.html">about</a>
+          </li>
+          <li>
+            <a href="projects.html">projects</a>
+          </li>
+          <li>
+            <a href="contact.html">contact</a>
+          </li>
+        </ul>
+        <!-- social media -->
+        <ul class="social-icons">
+          
+            <a href="https://www.facebook.com/share/15inWakqKR/?mibextid=LQQJ4d">
+              <i class="fab fa-facebook"></i>
+            </a>
+          
+          
+            <a href="https://www.twitter.com">
+              <i class="fab fa-twitter"></i>
+            </a>
+          
+              <a href="https://www.twitter.com">
+              <i class="fab fa-behance"></i>
+            </a>
+          
+            <a href="https://www.linkedin.com">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          
+          
+            <a href="https://www.instagram.com/roushan02_/profilecard/?igsh=ZWNid2lkNDMzdHk4">
+              <i class="fab fa-instagram"></i>
+            </a>
+          
+        </ul>
+    </aside>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
