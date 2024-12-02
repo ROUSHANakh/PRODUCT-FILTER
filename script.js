@@ -86,7 +86,7 @@ for (let i of products.data) {
     container.appendChild(name);
     //price
     let price = document.createElement("h6");
-    price.innerText = "$" + i.price;
+    price.innerText = "Price-" + i.price+" INR";
     container.appendChild(price);
     card.appendChild(container);
     document.getElementById("products").appendChild(card);
